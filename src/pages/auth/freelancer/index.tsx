@@ -2,10 +2,11 @@ import React, { useEffect } from 'react'
 
 import { Grid, Flex, Box } from '@chakra-ui/core'
 
-import freelancerBgUrl from '@/assets/bg/freelancer.png'
-import MyBriefLogo from '@/assets/mybrief.svg'
 import LoginForm from '@/components/modules/auth/LoginForm'
 import { useAuth } from '@/contexts/auth/AuthContainer'
+
+import freelancerBgUrl from '../assets/bg/freelancer.png'
+import MyBriefLogo from '../assets/mybrief.svg'
 
 const Freelancer: React.FC = () => {
   const { isAuthenticated } = useAuth()
