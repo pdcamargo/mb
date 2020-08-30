@@ -3,9 +3,9 @@ import { theme, DefaultTheme } from '@chakra-ui/core'
 const customTheme: DefaultTheme = {
   ...theme,
   fonts: {
-    body: 'Roboto, system-ui, sans-serif',
-    heading: 'Roboto, system-ui, sans-serif',
-    mono: 'Menlo, monospace'
+    body: 'Poppins, system-ui, sans-serif',
+    heading: 'Poppins, system-ui, sans-serif',
+    mono: 'Inconsolata, monospace'
   },
   fontWeights: {
     ...theme.fontWeights,
@@ -13,23 +13,20 @@ const customTheme: DefaultTheme = {
     medium: 600,
     bold: 700
   },
-  radii: {
-    ...theme.radii,
-    sm: '5px',
-    md: '8px'
-  },
   colors: {
     ...theme.colors,
-    purple: {
-      ...theme.colors.purple,
-      500: '#8257e5'
-    },
-    gray: {
-      ...theme.colors.gray,
-      300: '#e1e1e6',
-      600: '#29292e',
-      700: '#202024',
-      800: '#121214'
+    orange: {
+      ...theme.colors.orange,
+      50: '#ffe8e0',
+      100: '#ffc2b0',
+      200: '#ff9c7f',
+      300: '#fe6f47',
+      400: '#fd4d1c',
+      500: '#e33403',
+      600: '#b22801',
+      700: '#801b00',
+      800: '#4e0f00',
+      900: '#1f0300'
     }
   }
 }

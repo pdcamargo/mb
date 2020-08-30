@@ -24,11 +24,28 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "eslint-plugin-import-helpers"
   ],
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "import-helpers/order-imports": [
+      "error",
+      {
+        // example configuration
+        "newlinesBetween": "always",
+        "groups": [
+          "/react/",
+          "/next/",
+          "/@chakra-ui/core/",
+          "module",
+          "/@//",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   }
 }
